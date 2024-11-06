@@ -1,2 +1,24 @@
-# Front-end-development-for-fast-navigation-
-这是一个没有上线的项目,可以在本地启用,用于前端开发的快速网页跳转
+# vue-myweb
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
