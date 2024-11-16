@@ -4,35 +4,35 @@
       <ul class='header-nav'>
       <div class='header-line1'>
         <router-link to="/" custom v-slot='{navigate , isActive}' class='header-main'>
-          <li @click='navigate' :class="isActive?'':''">通用类</li>
+          <li @click='navigate' :class="isActive?'':''">通用类(Generic Class)</li>
         </router-link>
         <router-link to="/css" custom v-slot='{navigate , isActive}' class="header-other">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">CSS样式</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">CSS样式(CSS)</li>
         </router-link>
         <router-link to="/Component" custom v-slot='{navigate , isActive}' class="header-component">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">组件库</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">组件库(Library)</li>
         </router-link>
       </div>
       <div class='header-line2'>
         <router-link to="/FrameWork" custom v-slot='{navigate , isActive}' class="header-main">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">框架</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">框架(Framework)</li>
         </router-link>
         <router-link to="/CompatibleView" custom v-slot='{navigate , isActive}' class="header-other">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">兼容性</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">兼容性(Compatibility)</li>
         </router-link>
         <router-link to="/PageReference" custom v-slot='{navigate , isActive}' class="header-component">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">网页参考</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">网页参考(Web page reference)</li>
         </router-link>
       </div>
       <div class='header-line3'>
         <router-link to="/BackEnd" custom v-slot='{navigate , isActive}' class="header-main">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">后端</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">后端(Backend)</li>
         </router-link>
         <router-link to="/AgentView" custom v-slot='{navigate , isActive}' class='header-other'>
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">代理</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">代理(Agent)</li>
         </router-link>
         <router-link to="/ServeView" custom v-slot='{navigate , isActive}' class="header-component">
-          <li @click='navigate' :class="isActive?'router-link-exact-active':''">服务器上线</li>
+          <li @click='navigate' :class="isActive?'router-link-exact-active':''">服务器上线(ServerOnLine)</li>
         </router-link>
       </div>
     </ul>
@@ -75,7 +75,7 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
   }
   .myheader{
     width: 100%;
-    height: 6rem;
+    height: 7.5rem;
     margin: 2px 0;
   }
   .header-nav{
@@ -93,7 +93,7 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
   .header-main,.header-main-title{
     width: 33.3%;
     display: flex;
-    height:2rem;
+    height:2.5rem;
     align-items: center;
     justify-content: center;
   }
@@ -103,14 +103,14 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
   .header-other{
     display: flex;
     width: 33.3%;
-    height:2rem;
+    height:2.5rem;
     align-items: center;
     justify-content: center;
   }
   .header-component{
     display: flex;
     width: 33.3%;
-    height:2rem;
+    height:2.5rem;
     align-items: center;
     justify-content: center;
   }
@@ -121,6 +121,9 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     width: 100%;
     position:absolute;
     top:0;
+    li{
+      font-size:16px;
+    }
   }
   .header-line2{
     display: flex;
@@ -128,7 +131,7 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     justify-content: center;
     width: 100%;
     position: absolute;
-    top:2rem;
+    top:2.5rem;
   }
   .header-line3{
     display: flex;
@@ -136,7 +139,7 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     justify-content: center;
     width: 100%;
     position: absolute;
-    top:4rem;
+    top:5rem;
   }
   .mybody{
     width: 100%;
