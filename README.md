@@ -1,4 +1,5 @@
-# vue-myweb
+# vue-myweb(Collected common libraries and other websites to help developers navigate
+)
 
 ## Project setup
 ```
