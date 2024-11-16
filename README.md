@@ -1,4 +1,4 @@
-# vue-fast web go(Collected some websites for quick redirection by front-end developers)
+# vue-fast web go(Collected some websites for quick go by front-end developers)收集了一些网站用于前端开发者的快速跳转
 
 ## Project setup
 ```
