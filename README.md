@@ -2,12 +2,20 @@
 
 ## Project setup
 ```
+---use npm setup
 npm install
+---use yarn setup
+(npm install -g yarn)
+yarn install
+yarn serve
 ```
 
 ### Compiles and hot-reloads for development
 ```
+---use npm start
 npm run serve
+---use yarn start
+yarn serve
 ```
 
 ### Compiles and minifies for production
