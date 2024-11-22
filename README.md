@@ -1,6 +1,6 @@
 # vue-fast web go(Collected some websites for quick go by front-end developers)收集了一些网站用于前端开发者的快速跳转
 
-## Project setup
+## Project setup(初始化init)
 ```
 ---use npm setup
 npm install
@@ -10,7 +10,7 @@ yarn install
 yarn serve
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development(启动服务器-本地)
 ```
 ---use npm start
 npm run serve
@@ -18,12 +18,12 @@ npm run serve
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production(生成生产环境文件-配置后端使用)
 ```
 npm run build or download 'dist' file
 ```
 
-### Lints and fixes files
+### Lints and fixes files(修复文件不规则的地方 推荐使用自动修复)
 ```
 npm run lint
 ```
