@@ -10,7 +10,6 @@
     adress="https://www.nginx-cn.net/?utm_medium=cpc&utm_source=baidu&utm_campaign=apcj_china-nx_ssap_ngx"
     PicAdress="https://www.nginx-cn.net/content/dam/www/zh_cn-assets/nginx.svg">
     </Content-view>
-
     </div>
   </template>
 <script>
@@ -26,6 +25,11 @@ export default {
     return {
       activeName: 'introduce'
     }
+  },  mounted () {
+    this.$store.commit('HideDetail')
+  },
+  beforeDestroy () {
+    this.$store.commit('ShowDetail')
   }
 }
 </script>
@@ -36,7 +40,7 @@ export default {
   }
   .Agent{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

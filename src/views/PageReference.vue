@@ -3,13 +3,15 @@
     <Content-view
     WebName="蔚蓝档案(BlueArchieve)官网"
     adress="https://bluearchive-cn.com/"
-    PicAdress="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png">
+    PicAdress="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png"
+    sname="gsap">
     <li @click.stop='handleClick_BlueArchieve'>点我查看技术栈</li>
     </Content-view>
     <Content-view
     WebName="哔哩哔哩(bilibili)"
     adress="https://www.bilibili.com"
-    PicAdress="">
+    PicAdress=""
+    sname="all">
     <li @click.stop='handleClick_bilibili'>点我查看技术栈</li>
     </Content-view>
     </div>

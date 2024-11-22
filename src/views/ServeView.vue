@@ -4,7 +4,8 @@
     <Content-view
     WebName="Nginx"
     adress="https://www.nginx-cn.net/?utm_medium=cpc&utm_source=baidu&utm_campaign=apcj_china-nx_ssap_ngx"
-    PicAdress="https://www.nginx-cn.net/content/dam/www/zh_cn-assets/nginx.svg">
+    PicAdress="https://www.nginx-cn.net/content/dam/www/zh_cn-assets/nginx.svg"
+    sname="Reverse Proxy(反向代理) ServerOnline(服务器上线)">
     </Content-view>
 
     </div>
@@ -32,7 +33,7 @@ export default {
   }
   .ServerOnLine{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

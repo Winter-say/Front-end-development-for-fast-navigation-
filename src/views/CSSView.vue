@@ -23,7 +23,7 @@
     <Content-view
     WebName="GSAP"
     adress="https://gsap.com/"
-    PicAdress="">
+    PicAdress="https://gsap.com/favicon-32x32.png">
     </Content-view>
 
   </div>
@@ -40,9 +40,6 @@ export default {
   //   // 代理cors https://cors-anywhere.herokuapp.com/
   //   axios.get('https://gsap.com/favicon-32x32.png', {
   //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'x-content-security-policy': "frame-ancestors 'self'",
-  //       'X-Firefox-Spdy': 'h2',
   //       'x-frame-options': 'sameorigin'
   //     }
   //   })
@@ -63,6 +60,12 @@ export default {
   //   oscript.remove()
   // },
   components: { ContentView }
+  ,  mounted () {
+    this.$store.commit('HideDetail')
+  },
+  beforeDestroy () {
+    this.$store.commit('ShowDetail')
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -72,7 +75,7 @@ export default {
 }
 .css{
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

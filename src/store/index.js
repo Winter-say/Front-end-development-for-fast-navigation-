@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isTabbarShow: true
+    isTabbarShow: true,
+    isDetailShow: true
   },
   getters: {
   },
@@ -15,6 +16,12 @@ export default new Vuex.Store({
     },
     hide (state) {
       state.isTabbarShow = false
+    },
+    ShowDetail(state){
+      state.isDetailShow = true
+    },
+    HideDetail(state){
+      state.isDetailShow = false
     }
   },
   actions: {

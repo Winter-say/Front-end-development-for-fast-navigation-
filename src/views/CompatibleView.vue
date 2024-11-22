@@ -3,12 +3,14 @@
     <Content-view
     WebName="CanIUse?"
     adress="https://caniuse.com/"
-    PicAdress="https://caniuse.com/img/favicon-128.png">
+    PicAdress="https://caniuse.com/img/favicon-128.png"
+    sname="Check the compatibility of native methods(查看原生方法的兼容性)">
     </Content-view>
     <Content-view
     WebName="PostCSS"
     adress="https://postcss.nodejs.cn/"
-    PicAdress="https://postcss.nodejs.cn/assets/logo-tq8kLoG9.svg">
+    PicAdress="https://postcss.nodejs.cn/assets/logo-tq8kLoG9.svg"
+    sname="Improve project compatibility(提高项目兼容性)">
     </Content-view>
     <Content-view
     WebName="Sass"
@@ -35,7 +37,7 @@ export default {
   }
   .CompatibleView{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

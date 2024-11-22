@@ -26,6 +26,11 @@ export default {
     return {
       activeName: 'introduce'
     }
+  },  mounted () {
+    this.$store.commit('HideDetail')
+  },
+  beforeDestroy () {
+    this.$store.commit('ShowDetail')
   }
 }
 </script>
@@ -36,7 +41,7 @@ export default {
   }
   .BackEnd{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

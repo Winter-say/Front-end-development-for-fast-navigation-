@@ -55,6 +55,39 @@
 //   }
 // }
 document.documentElement.style.fontSize = document.documentElement.clientWidth / 414 * 16 + 'px'
+export default {
+data() {
+  return {
+    myBodyHeight: 0, // 用于存储 mybody 的高度
+  };
+},
+
+methods: {
+  // 计算 mybody 的高度
+  calculateMyBodyHeight() {
+    // 获取窗口高度
+    const windowHeight = window.innerHeight;
+    // 获取 header 的高度（假设 header 的高度是固定的）
+    const header = document.querySelector('.myheader');
+    const headerHeight = header ? header.offsetHeight : 0;
+    // 计算 mybody 的高度
+    this.myBodyHeight = windowHeight - headerHeight;
+  },
+},
+
+mounted() {
+  // 初始化高度
+  this.calculateMyBodyHeight();
+  // 监听窗口大小变化
+  window.addEventListener('resize', this.calculateMyBodyHeight);
+},
+
+beforeDestroy() {
+  // 移除事件监听器
+  window.removeEventListener('resize', this.calculateMyBodyHeight);
+
+},
+};
 </script>
 <style lang="scss" scoped>
   *{
@@ -143,6 +176,9 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
   }
   .mybody{
     width: 100%;
+    height: v-bind('myBodyHeight')px; // 动态绑定高度
+  /* 其他样式 */
+    overflow: auto; // 如果内容超过高度，则滚动
   }
   .router-link-exact-active{
     color:red;

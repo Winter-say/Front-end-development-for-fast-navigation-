@@ -3,12 +3,14 @@
     <Content-view
     WebName="Vue"
     adress="https://cn.vuejs.org/"
-    PicAdress="https://cn.vuejs.org/logo.svg">
+    PicAdress="https://cn.vuejs.org/logo.svg"
+    sname="Scalability(扩展能力)">
     </Content-view>
     <Content-view
     WebName="React"
     adress="https://react.docschina.org/"
-    PicAdress="https://react.docschina.org/favicon.ico">
+    PicAdress="https://react.docschina.org/favicon.ico"
+    sname="Familiar with official writing style(熟悉官方写法)">
     </Content-view>
     <Content-view
     WebName="Nuxt.js(Vue)"
@@ -27,6 +29,7 @@
 import ContentView from '@/components/ContentView.vue'
 export default {
   components: { ContentView }
+  
 }
 </script>
   <style lang="scss" scoped>
@@ -36,7 +39,7 @@ export default {
   }
   .FrameWork{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

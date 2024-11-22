@@ -3,14 +3,15 @@
     <Content-view
     WebName="MdnCode"
     adress="https://developer.mozilla.org/zh-CN/"
-    PicAdress="https://developer.mozilla.org/favicon-48x48.bc390275e955dacb2e65.png">
+    PicAdress="https://developer.mozilla.org/favicon-48x48.bc390275e955dacb2e65.png"
+    sname=" HTML | CSS | JavaScript | webApi | Http | Web Extensions |">
     </Content-view>
     <Content-view
     WebName="npm"
     adress="https://www.npmjs.com/"
-    PicAdress="https://static-production.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png">
+    PicAdress="https://static-production.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png"
+    sname="Search for third-party libraries such as Axios(查找第三方库 例如:axios)">
     </Content-view>
-
   </div>
 </template>
 <script>
@@ -36,7 +37,7 @@ export default {
 }
 .comprehensive{
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

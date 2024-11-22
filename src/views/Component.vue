@@ -3,12 +3,14 @@
         <Content-view
         WebName="Element ui"
         adress="https://element.eleme.cn/#/zh-CN"
-        PicAdress="https://element.eleme.cn/favicon.ico">
+        PicAdress="https://element.eleme.cn/favicon.ico"
+        sname="component library(组件库)">
         </Content-view>
         <Content-view
         WebName="Vant(Vue2)"
         adress="https://vant-ui.github.io/vant/v2/#/zh-CN/"
-        PicAdress="https://img01.yzcdn.cn/vant/logo.png">
+        PicAdress="https://img01.yzcdn.cn/vant/logo.png"
+        sname="Mobile Component Library(移动端组件库)">
         </Content-view>
         <Content-view
         WebName="Jquery"
