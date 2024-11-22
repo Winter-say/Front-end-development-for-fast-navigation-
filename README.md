@@ -27,6 +27,11 @@ npm run build or download 'dist' file
 ```
 npm run lint
 ```
+### Regarding the use of the project: Please do not use it for commercial purposes
+(关于项目的使用:请不要用于商业行为)
+
+### Wanring:Due to the author's poor English proficiency, using system translation may cause some readers to have difficulty reading. We apologize for any inconvenience caused
+（由于作者英语较差 所以使用系统翻译 可能会导致部分读者阅读有困难 请见谅）
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
