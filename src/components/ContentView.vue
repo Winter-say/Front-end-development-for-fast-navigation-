@@ -10,8 +10,8 @@
         <slot></slot>
       </div>
       <div class="detail" @click.stop="HandleNogo" v-show='$store.state.isDetailShow'>
-        <img src="../assets/arrow.png" alt="箭头">
-      </div>
+      <img src="../assets/arrow.png" alt="箭头" @click="rotateImage">
+    </div>
       <div class="detail-cha" v-show="DetailShow">
         <p>适用于(suitable for): {{ sname }}</p >
       </div>
@@ -23,27 +23,49 @@
 export default {
   data() {
     return {
-      DetailShow: false
-    };
+      DetailShow: false,
+    }
   },
   props: ['WebName', 'adress', 'PicAdress', 'sname'],
   methods: {
     HandleGo() {
-      // 使用 window.location.href 以确保在所有环境下都能正常工作
       window.location.href = this.adress;
     },
     HandleNogo() {
-      // 切换 DetailShow 的状态
       this.DetailShow = !this.DetailShow;
-    }
+    },
+    rotateImage() {
+      const img = event.target;
+      const currentTransform = img.style.transform;
+      if (currentTransform.includes('180deg')) {
+        img.style.transform = 'rotate(0deg)';
+      } else {
+        img.style.transform = 'rotate(180deg)';
+      }
   }
-};
+          }
+}
 </script>
 
 <style scoped lang="scss">
 * {
   padding: 0;
   margin: 0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.detail img {
+  width: 1rem;
+  height: 0.8rem;
+  background-size: 100% 100%;
+  transition: transform 0.5s;
 }
 
 .card {
